@@ -30,6 +30,7 @@ pipeline:
                   identifier: gotestcoverage
                   name: go_test_coverage
                   spec:
+                    shell: Sh
                     command: go test -coverprofile=coverage.out ./...
                   timeout: ""
                   type: Run
@@ -57,9 +58,9 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI

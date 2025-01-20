@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sonarintegration_Demo_Gobackend_1737351757347-pr-trigger-input-set
+  identifier: Build_sonarintegration_Demo_Gobackend_1737351757347prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_sonarintegration_Demo_Gobackend_1737351757347
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
